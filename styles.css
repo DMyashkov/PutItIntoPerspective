@@ -1,0 +1,10 @@
+canvas {
+  display: block; /* fix necessary to remove space at bottom of canvas */
+}
+
+.nameModel {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 2rem; /* Default size */
+}
