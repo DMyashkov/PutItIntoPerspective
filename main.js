@@ -98,10 +98,6 @@ function updateGround() {
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
 scene.add(ambientLight);
 
-const spotLight = new THREE.SpotLight(0xffffff, 150, 100, 0.5, 0.2);
-spotLight.position.set(0, 10, 0);
-scene.add(spotLight);
-
 // GLTF Loader
 const loader = new GLTFLoader().setPath("/");
 const fontLoader = new FontLoader();
@@ -156,6 +152,18 @@ function loadModel(modelAttribute, previousModelAttribute) {
           modelAttribute.scaleFactor,
           modelAttribute.scaleFactor,
         );
+
+        mesh.traverse((node) => {
+          if (node.isMesh) {
+            // If the material is MeshStandardMaterial, adjust its properties
+            if (node.material && node.material.isMeshStandardMaterial) {
+              // Reduce reflectiveness
+              node.material.roughness = 0.6; // Increase this value to make it rougher (less shiny)
+              node.material.metalness = 0.1; // Decrease this value to make it less metallic (lower reflections)
+              node.material.needsUpdate = true; // Apply the changes to the material
+            }
+          }
+        });
         console.log(
           "xyz ",
           modelAttribute.x,
@@ -165,6 +173,34 @@ function loadModel(modelAttribute, previousModelAttribute) {
 
         mesh.position.set(modelAttribute.x, modelAttribute.y, modelAttribute.z);
         scene.add(mesh);
+
+        const spotlight = new THREE.SpotLight(0xffffff);
+        spotlight.target = mesh; // Point the spotlight at the model
+
+        // Set spotlight position above and slightly in front of the model
+        spotlight.position.set(
+          modelAttribute.x,
+          modelAttribute.y + modelAttribute.height * 1.5, // Set higher above the model
+          modelAttribute.z, // Slightly in front
+        );
+
+        // Calculate the angle to uniformly cover the model's base
+        spotlight.angle = Math.atan(
+          modelAttribute.height / (2 * modelAttribute.depth),
+        );
+
+        // Set constant intensity to ensure uniform brightness
+        spotlight.intensity = modelAttribute.height ** 2 * 5; // Fixed intensity value
+
+        // Set a large distance so that the light doesn’t dim too soon
+        spotlight.distance = modelAttribute.height * 3; // Based on model size
+
+        spotlight.penumbra = 0.3; // Slightly soft edges for natural light falloff
+
+        // Ensure the spotlight doesn't fade out too early
+        spotlight.decay = 2; // Control how fast the light dims (2 is typical for realistic lighting)
+        // Optional: Add spotlight helper to visualize the light in the scene (for debugging)
+        scene.add(spotlight);
 
         fontLoader.load("/public/roboto/Medium_Regular.json", function (font) {
           const textGeometry = new TextGeometry(modelAttribute.name, {
@@ -214,8 +250,7 @@ function loadModel(modelAttribute, previousModelAttribute) {
               modelAttribute.height / 2 +
               textHeight +
               textHeight / 10 -
-              textHeight / 2 -
-              textHeight / 10, // Adjust Y position
+              textHeight / 2,
             modelAttribute.z,
           );
           scene.add(textMesh);
