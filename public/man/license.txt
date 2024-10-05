@@ -1,0 +1,11 @@
+Model Information:
+* title:	3d scan man 1
+* source:	https://sketchfab.com/3d-models/3d-scan-man-1-ad42febfaeb64aa0992e804acc9e7ccd
+* author:	rusttm88 (https://sketchfab.com/rusttm88)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "3d scan man 1" (https://sketchfab.com/3d-models/3d-scan-man-1-ad42febfaeb64aa0992e804acc9e7ccd) by rusttm88 (https://sketchfab.com/rusttm88) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

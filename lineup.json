@@ -1,5 +1,5 @@
 [
-  { "name": "earth", "height": 2, "weight": "200kg" },
-  { "name": "earth", "height": 5, "weight": "500kg" },
-  { "name": "earth", "height": 10, "weight": "1000kg" }
+  { "name": "bottle", "height": 2, "weight": "0.5kg" },
+  { "name": "man", "height": 18, "weight": "80" },
+  { "name": "empire_state_building", "height": 3600, "weight": "1000" }
 ]

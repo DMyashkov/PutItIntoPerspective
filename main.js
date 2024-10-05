@@ -20,10 +20,12 @@ const CAMERA_SPEED = 5;
 const ISTHEREANIMATION = true;
 const GROUND_WIDTH = 50; // Size of each ground piece
 const GROUND_HEIGHT = 50; // Size of each ground piece
-const GROUND_COUNT = 5; // Number of ground pieces for illusion of infinity
-const GROUND_SPACING = GROUND_WIDTH; // Space between ground pieces
 
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer({
+  antialias: true,
+  alpha: true,
+  logarithmicDepthBuffer: true,
+});
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setClearColor(0x000000);
@@ -38,12 +40,26 @@ document.body.appendChild(renderer.domElement);
 // Scene
 const scene = new THREE.Scene();
 
+// Ground Plane
+const groundGeometry = new THREE.PlaneGeometry(
+  GROUND_WIDTH * 1000,
+  GROUND_HEIGHT * 1000,
+); // Increase the size by a factor of 10
+const groundMaterial = new THREE.MeshStandardMaterial({
+  color: 0xa9a9a9,
+  roughness: 1,
+});
+const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
+groundMesh.rotation.x = -Math.PI / 2; // Rotate the plane to be horizontal
+groundMesh.position.y = 0; // Set the position of the ground
+scene.add(groundMesh);
+
 // Camera
 const camera = new THREE.PerspectiveCamera(
   CAMERA_FOV,
   window.innerWidth / window.innerHeight,
   1,
-  1000,
+  100000,
 );
 
 // Resize handling
@@ -58,41 +74,8 @@ function onWindowResize() {
 }
 
 // Ground plane
-const groundMaterial = new THREE.MeshPhysicalMaterial({
-  color: 0x555555,
-  metalness: 0.2,
-});
-
-const groundGroup = new THREE.Group();
-
-for (let i = 0; i < GROUND_COUNT; i++) {
-  const groundGeometry = new THREE.PlaneGeometry(
-    GROUND_WIDTH,
-    GROUND_HEIGHT,
-    32,
-    32,
-  );
-  groundGeometry.rotateX(-Math.PI / 2);
-
-  const groundMesh = new THREE.Mesh(groundGeometry, groundMaterial);
-  groundMesh.position.set(i * GROUND_SPACING, 0, 0); // Position each plane along the x-axis
-  groundGroup.add(groundMesh);
-}
-
-scene.add(groundGroup);
 
 // Update function to recycle ground planes
-function updateGround() {
-  groundGroup.children.forEach((groundMesh, index) => {
-    // Move the ground pieces to the left
-    groundMesh.position.x -= 0.1; // Adjust this value to change the speed
-
-    // Check if the ground piece is out of view and reposition it
-    if (groundMesh.position.x < -GROUND_WIDTH) {
-      groundMesh.position.x += GROUND_COUNT * GROUND_SPACING; // Recycle to the end
-    }
-  });
-}
 
 // Lighting
 const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
@@ -153,17 +136,27 @@ function loadModel(modelAttribute, previousModelAttribute) {
           modelAttribute.scaleFactor,
         );
 
-        mesh.traverse((node) => {
-          if (node.isMesh) {
-            // If the material is MeshStandardMaterial, adjust its properties
-            if (node.material && node.material.isMeshStandardMaterial) {
-              // Reduce reflectiveness
-              node.material.roughness = 0.6; // Increase this value to make it rougher (less shiny)
-              node.material.metalness = 0.1; // Decrease this value to make it less metallic (lower reflections)
-              node.material.needsUpdate = true; // Apply the changes to the material
-            }
-          }
-        });
+        // mesh.traverse((node) => {
+        //   if (node.isMesh) {
+        //     // If the material is MeshStandardMaterial, adjust its properties
+        //     if (node.material && node.material.isMeshStandardMaterial) {
+        //       // Reduce reflectiveness
+        //       node.material.roughness = 0.6; // Increase this value to make it rougher (less shiny)
+        //       node.material.metalness = 0.1; // Decrease this value to make it less metallic (lower reflections)
+        //       node.material.needsUpdate = true; // Apply the changes to the material
+        //     }
+        //   }
+        // });
+
+        mesh.position.set(modelAttribute.x, modelAttribute.y, modelAttribute.z);
+        // Compute the bounding box of the entire scene (including all children)
+        const box = new THREE.Box3().setFromObject(mesh);
+        const center = box.getCenter(new THREE.Vector3());
+
+        mesh.position.x += mesh.position.x - center.x;
+        mesh.position.y += mesh.position.y - center.y;
+        mesh.position.z += mesh.position.z - center.z;
+
         console.log(
           "xyz ",
           modelAttribute.x,
@@ -186,7 +179,7 @@ function loadModel(modelAttribute, previousModelAttribute) {
 
         // Calculate the angle to uniformly cover the model's base
         spotlight.angle = Math.atan(
-          modelAttribute.height / (2 * modelAttribute.depth),
+          modelAttribute.height / (modelAttribute.width / 2),
         );
 
         // Set constant intensity to ensure uniform brightness
@@ -219,8 +212,7 @@ function loadModel(modelAttribute, previousModelAttribute) {
             modelAttribute.x - textWidth / 2, // Center the text
             modelAttribute.y +
               modelAttribute.height / 2 +
-              textHeight +
-              textHeight / 10 +
+              +modelAttribute.height / 6 +
               textHeight / 2 +
               textHeight / 10, // Adjust Y position
             modelAttribute.z,
@@ -248,9 +240,9 @@ function loadModel(modelAttribute, previousModelAttribute) {
             modelAttribute.x - textWidth / 2, // Center the text
             modelAttribute.y +
               modelAttribute.height / 2 +
-              textHeight +
-              textHeight / 10 -
-              textHeight / 2,
+              modelAttribute.height / 6 -
+              textHeight / 2 -
+              textHeight / 10, // Adjust Y position
             modelAttribute.z,
           );
           scene.add(textMesh);
@@ -322,10 +314,9 @@ function createCameraHopPositions(modelAttributes) {
   const cameraHopPositions = [];
   modelAttributes.forEach((model) => {
     const calculatedZ =
-      (7 / 5) *
-      (model.depth / 2 +
-        Math.max(model.height, model.width) /
-          Math.tan((CAMERA_FOV / 0.9) * (Math.PI / 180)));
+      (12 / 5) *
+      (Math.max(model.height, model.width) /
+        Math.tan((CAMERA_FOV / 0.9) * (Math.PI / 180)));
 
     cameraHopPositions.push({
       x: model.x,
@@ -346,7 +337,7 @@ function startWalking(modelAttributes, cameraHopPositions) {
       i > 0 ? modelAttribute.height / modelAttributes[i - 1].height : 1;
 
     tl.to(camera.position, {
-      duration: (ratio * 5) / CAMERA_SPEED,
+      duration: 0.3 * ((ratio * 5) / CAMERA_SPEED) + 0.7 * 2,
       x: cameraPos.x,
       y: cameraPos.y,
       z: cameraPos.z,
@@ -358,7 +349,6 @@ function startWalking(modelAttributes, cameraHopPositions) {
 function animate() {
   requestAnimationFrame(animate);
   // cubeCamera.update(renderer, scene);
-  updateGround();
   renderer.render(scene, camera);
   // console.log("Camera Position:", camera.position);
 }
