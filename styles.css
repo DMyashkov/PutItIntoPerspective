@@ -1,5 +1,15 @@
-canvas {
-  display: block; /* fix necessary to remove space at bottom of canvas */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 100vh;
 }
 
 .nameModel {
