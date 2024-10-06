@@ -2,29 +2,40 @@ import * as THREE from "three";
 import { TextGeometry } from "three/examples/jsm/geometries/TextGeometry.js";
 
 export function calculateModelDimensions(loader, modelAttribute) {
-  return new Promise((resolve, reject) => {
-    loader.load(
-      modelAttribute.path,
-      (gltf) => {
-        const mesh = gltf.scene;
-        const box = new THREE.Box3().setFromObject(mesh);
-        const originalHeight = box.max.y - box.min.y;
-        const originalWidth = box.max.x - box.min.x;
-        const originalDepth = box.max.z - box.min.z;
-        const scaleFactor = (1 / originalHeight) * modelAttribute.height;
+  if (modelAttribute.path == "cube") {
+    modelAttribute.width = modelAttribute.height;
+    modelAttribute.depth = modelAttribute.height;
+    modelAttribute.scaleFactor = 1;
+    modelAttribute.y = modelAttribute.isCenterDown
+      ? 0
+      : modelAttribute.height / 2;
+    modelAttribute.z = 0;
+    return Promise.resolve();
+  } else {
+    return new Promise((resolve, reject) => {
+      loader.load(
+        modelAttribute.path,
+        (gltf) => {
+          const mesh = gltf.scene;
+          const box = new THREE.Box3().setFromObject(mesh);
+          const originalHeight = box.max.y - box.min.y;
+          const originalWidth = box.max.x - box.min.x;
+          const originalDepth = box.max.z - box.min.z;
+          const scaleFactor = (1 / originalHeight) * modelAttribute.height;
 
-        modelAttribute.width = originalWidth * scaleFactor;
-        modelAttribute.depth = originalDepth * scaleFactor;
-        modelAttribute.scaleFactor = scaleFactor;
-        modelAttribute.y = modelAttribute.isCenterDown
-          ? 0
-          : modelAttribute.height / 2;
-        modelAttribute.z = 0;
-        resolve();
-      },
-      undefined,
-    );
-  });
+          modelAttribute.width = originalWidth * scaleFactor;
+          modelAttribute.depth = originalDepth * scaleFactor;
+          modelAttribute.scaleFactor = scaleFactor;
+          modelAttribute.y = modelAttribute.isCenterDown
+            ? 0
+            : modelAttribute.height / 2;
+          modelAttribute.z = 0;
+          resolve();
+        },
+        undefined,
+      );
+    });
+  }
 }
 
 export function generateDescription(scene, fontLoader, modelAttribute) {

@@ -21,7 +21,7 @@ function sleep(milliseconds) {
 const SPACE_BETWEEN_MODELS = 3;
 const CAMERA_FOV = 45;
 const CAMERA_SPEED = 5;
-const ISTHEREANIMATION = false;
+const ISTHEREANIMATION = true;
 const GROUND_WIDTH = 50; // Size of each ground piece
 const GROUND_HEIGHT = 50; // Size of each ground piece
 
@@ -112,22 +112,42 @@ class Model {
   }
 }
 
-function loadModel(modelAttribute, previousModelAttribute) {
+function loadModel(modelAttribute) {
   return new Promise((resolve, reject) => {
-    loader.load(
-      modelAttribute.path,
-      (gltf) => {
-        const mesh = gltf.scene;
-        setPositionAndScale(modelAttribute, mesh);
-        scene.add(mesh);
-        createSpotlight(scene, modelAttribute, mesh);
-        generateDescription(scene, fontLoader, modelAttribute);
+    if (modelAttribute.path == "cube") {
+      const cube = new THREE.Mesh(
+        new THREE.BoxGeometry(
+          modelAttribute.width,
+          modelAttribute.height,
+          modelAttribute.depth,
+        ),
+        new THREE.MeshStandardMaterial({
+          map: grainTexture,
+          color: 0xade8f4,
+        }),
+      );
+      cube.position.set(modelAttribute.x, modelAttribute.y, modelAttribute.z);
+      scene.add(cube);
+      createSpotlight(scene, modelAttribute, cube);
+      generateDescription(scene, fontLoader, modelAttribute);
+      resolve();
+      return;
+    } else {
+      loader.load(
+        modelAttribute.path,
+        (gltf) => {
+          const mesh = gltf.scene;
+          setPositionAndScale(modelAttribute, mesh);
+          scene.add(mesh);
+          createSpotlight(scene, modelAttribute, mesh);
+          generateDescription(scene, fontLoader, modelAttribute);
 
-        resolve(); // Resolve the promise when the model is loaded
-      },
-      undefined,
-      reject,
-    );
+          resolve(); // Resolve the promise when the model is loaded
+        },
+        undefined,
+        reject,
+      );
+    }
   });
 }
 
@@ -144,7 +164,11 @@ function createModelAttributes(models) {
       models[i].characteristic,
       models[i].isCenterDown,
     );
-    modelAttribute.path = `${modelAttribute.fileName}/${modelAttribute.fileName}.gltf`;
+    if (models[i].fileName == "cube") {
+      modelAttribute.path = "cube";
+    } else {
+      modelAttribute.path = `${modelAttribute.fileName}/${modelAttribute.fileName}.gltf`;
+    }
     modelAttributes.push(modelAttribute);
   }
 

@@ -49,5 +49,13 @@
     "characteristic": "443m",
     "weight": "1000",
     "isCenterDown": false
+  },
+  {
+    "fileName": "trash_bag",
+    "name": "Plastic waste",
+    "height": 20000,
+    "characteristic": "8848m",
+    "weight": "1000000",
+    "isCenterDown": true
   }
 ]
