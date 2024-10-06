@@ -13,7 +13,7 @@ import countryToCode from "./countryToCode.json";
 // };
 //
 
-import wasteData from "./sample_data.json";
+import wasteData from "./waste_data.json";
 
 const polygonSeriesData = [];
 

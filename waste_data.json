@@ -359,6 +359,21 @@
     "mwi": "81.62%",
     "archetype": "The Low-Waste-Producing Polluters"
   },
+  "Saudi Arabia": {
+    "waste": "1 145 112 tons of plastic",
+    "mwi": "52.22%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Central African Republic": {
+    "waste": "1 263 tons of plastic",
+    "mwi": "95.89%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "South Sudan": {
+    "waste": "17 760 tons of plastic",
+    "mwi": "90.24%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
   "Micronesia": {
     "waste": "1 200 tons of plastic",
     "mwi": "81.31%",
@@ -739,6 +754,26 @@
     "mwi": "5.07%",
     "archetype": "The Overloaders"
   },
+  "Libya": {
+    "waste": "96 840 tons of plastic",
+    "mwi": "66.35%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Tunisia": {
+    "waste": "120 317 tons of plastic",
+    "mwi": "49.95%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Morocco": {
+    "waste": "461 693 tons of plastic",
+    "mwi": "61.62%%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Russia": {
+    "waste": "3 182 063 tons of plastic",
+    "mwi": "60.00%",
+    "archetype": "The Moderate Polluters"
+  },
   "Denmark": {
     "waste": "20 382 tons of plastic",
     "mwi": "4.84%",
@@ -793,6 +828,26 @@
     "waste": "832 tons of plastic",
     "mwi": "2.68%",
     "archetype": "The Overloaders"
+  },
+  "Turkey": {
+    "waste": "1 484 942 tons of plastic",
+    "mwi": "52.83%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Burkina Faso": {
+    "waste": "77 636 tons of plastic",
+    "mwi": "90.67%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Thailand": {
+    "waste": "1 472 227 tons of plastic",
+    "mwi": "45.88%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Indonesia": {
+    "waste": "1 848 033 tons of plastic",
+    "mwi": "43.78%",
+    "archetype": "The Moderate Polluters"
   },
   "Korea": {
     "waste": "68 780 tons of plastic",
