@@ -4,6 +4,18 @@
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <div class="menuContainer">
+      <button id="backToHomeButton" class="select-button">Back to Home</button>
+      <p id="title">Visualization</p>
+    </div>
     <script type="module" src="./main.js"></script>
+    <script>
+      // Add event listener to the "Back to Home" button
+      document
+        .getElementById("backToHomeButton")
+        .addEventListener("click", function () {
+          window.location.href = "index.html"; // Navigate back to index.html
+        });
+    </script>
   </body>
 </html>

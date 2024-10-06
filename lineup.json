@@ -39,7 +39,6 @@
     "name": "Eiffel Tower",
     "height": 3300,
     "characteristic": "330m",
-    "weight": "80",
     "isCenterDown": true
   },
   {
@@ -47,15 +46,6 @@
     "name": "Empire State Building",
     "height": 4430,
     "characteristic": "443m",
-    "weight": "1000",
     "isCenterDown": false
-  },
-  {
-    "fileName": "trash_bag",
-    "name": "Plastic waste",
-    "height": 20000,
-    "characteristic": "8848m",
-    "weight": "1000000",
-    "isCenterDown": true
   }
 ]

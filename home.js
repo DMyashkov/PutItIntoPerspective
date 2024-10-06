@@ -7,7 +7,6 @@ import wasteData from "./cleaned_data.json";
 import codeToCountry from "./codeToCountry.json";
 
 const polygonSeriesData = [];
-import visualizePlasticWaste from "./main.js";
 
 // Convert hex color to RGB
 function hexToRgb(hex) {
@@ -220,7 +219,35 @@ am5.ready(function () {
 
     // Enable the button by adding an event listener to call the visualization function when clicked
     selectCountryButton.onclick = () => {
-      visualizePlasticWaste(selectedCountry); // Call the function to visualize plastic waste
+      const dataToPass = wasteData[codeToCountry[id]];
+      const h = 20000;
+      const w = 15895.903546583828;
+      const d = 15746.27062983472;
+      const percentageOfContentInBoundingBox = 0.9;
+      const waterBottlesPerTon = 60479;
+      const waterBottleVolume = 0.5;
+      console.log(
+        waterBottlesPerTon,
+        waterBottleVolume,
+        dataToPass.waste,
+        (waterBottlesPerTon * waterBottleVolume * dataToPass.waste * 10) / 9,
+      );
+      const volumeTrashBag =
+        waterBottlesPerTon *
+        waterBottleVolume *
+        dataToPass.waste *
+        (1 / percentageOfContentInBoundingBox) *
+        0.001;
+      console.log(volumeTrashBag, "m^3");
+      const trashBagHeight = Math.pow(
+        volumeTrashBag * (h / w) * (h / d),
+        1 / 3,
+      );
+      const trashBagHeightDecimeters = trashBagHeight * 10;
+      localStorage.setItem("height", trashBagHeightDecimeters);
+      localStorage.setItem("data", JSON.stringify(dataToPass));
+      localStorage.setItem("country", codeToCountry[id]);
+      window.location.href = "visualization.html";
     };
 
     var dataItem = polygonSeries.getDataItemById(id);

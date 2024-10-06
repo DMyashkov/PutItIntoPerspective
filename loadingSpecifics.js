@@ -39,6 +39,7 @@ export function calculateModelDimensions(loader, modelAttribute) {
 }
 
 export function generateDescription(scene, fontLoader, modelAttribute) {
+  console.log(`Generating description for model ${modelAttribute.name}`);
   fontLoader.load("/public/roboto/Medium_Regular.json", function (font) {
     const textGeometry = new TextGeometry(modelAttribute.name, {
       font: font,
@@ -59,6 +60,9 @@ export function generateDescription(scene, fontLoader, modelAttribute) {
         textHeight / 2 +
         textHeight / 10, // Adjust Y position
       modelAttribute.z,
+    );
+    console.log(
+      `Position of text for ${modelAttribute.name}: ${textMesh.position.x}, ${textMesh.position.y}, ${textMesh.position.z}`,
     );
     scene.add(textMesh);
   });
