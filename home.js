@@ -107,7 +107,7 @@ am5.ready(function () {
   chart.set(
     "background",
     am5.Rectangle.new(root, {
-      fill: am5.color(0x001219),
+      fill: am5.color(0x264653),
     }),
   );
 

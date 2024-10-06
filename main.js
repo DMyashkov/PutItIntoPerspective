@@ -17,7 +17,7 @@ function sleep(milliseconds) {
 const SPACE_BETWEEN_MODELS = 3;
 const CAMERA_FOV = 45;
 const CAMERA_SPEED = 5;
-const ISTHEREANIMATION = true;
+const ISTHEREANIMATION = false;
 const GROUND_WIDTH = 50; // Size of each ground piece
 const GROUND_HEIGHT = 50; // Size of each ground piece
 
@@ -84,11 +84,18 @@ scene.add(ambientLight);
 // GLTF Loader
 const loader = new GLTFLoader().setPath("/");
 const fontLoader = new FontLoader();
+// Load grain texture
+const textureLoader = new THREE.TextureLoader();
+const grainTexture = textureLoader.load("textures/grain2.jpg");
+
+// Create a cube geometry
 
 class Model {
-  constructor(name, height) {
+  constructor(name, fileName, height, characteristic, isCenterDown) {
     this.name = name;
+    this.fileName = fileName;
     this.path = "";
+    this.characteristic = characteristic;
     this.x = 0;
     this.y = 0;
     this.z = 0;
@@ -96,6 +103,7 @@ class Model {
     this.width = 0;
     this.depth = 0;
     this.scaleFactor = 0;
+    this.isCenterDown = isCenterDown;
   }
 }
 
@@ -114,7 +122,9 @@ function calculateModelDimensions(modelAttribute) {
         modelAttribute.width = originalWidth * scaleFactor;
         modelAttribute.depth = originalDepth * scaleFactor;
         modelAttribute.scaleFactor = scaleFactor;
-        modelAttribute.y = modelAttribute.height / 2;
+        modelAttribute.y = modelAttribute.isCenterDown
+          ? 0
+          : modelAttribute.height / 2;
         modelAttribute.z = 0;
         resolve();
       },
@@ -149,22 +159,7 @@ function loadModel(modelAttribute, previousModelAttribute) {
         // });
 
         mesh.position.set(modelAttribute.x, modelAttribute.y, modelAttribute.z);
-        // Compute the bounding box of the entire scene (including all children)
-        const box = new THREE.Box3().setFromObject(mesh);
-        const center = box.getCenter(new THREE.Vector3());
 
-        mesh.position.x += mesh.position.x - center.x;
-        mesh.position.y += mesh.position.y - center.y;
-        mesh.position.z += mesh.position.z - center.z;
-
-        console.log(
-          "xyz ",
-          modelAttribute.x,
-          modelAttribute.y,
-          modelAttribute.z,
-        );
-
-        mesh.position.set(modelAttribute.x, modelAttribute.y, modelAttribute.z);
         scene.add(mesh);
 
         const spotlight = new THREE.SpotLight(0xffffff);
@@ -173,7 +168,7 @@ function loadModel(modelAttribute, previousModelAttribute) {
         // Set spotlight position above and slightly in front of the model
         spotlight.position.set(
           modelAttribute.x,
-          modelAttribute.y + modelAttribute.height * 1.5, // Set higher above the model
+          modelAttribute.height * 2, // Set higher above the model
           modelAttribute.z, // Slightly in front
         );
 
@@ -210,8 +205,7 @@ function loadModel(modelAttribute, previousModelAttribute) {
           const textMesh = new THREE.Mesh(textGeometry, textMaterial);
           textMesh.position.set(
             modelAttribute.x - textWidth / 2, // Center the text
-            modelAttribute.y +
-              modelAttribute.height / 2 +
+            modelAttribute.height +
               +modelAttribute.height / 6 +
               textHeight / 2 +
               textHeight / 10, // Adjust Y position
@@ -222,7 +216,7 @@ function loadModel(modelAttribute, previousModelAttribute) {
 
         fontLoader.load("/public/roboto/Light_Regular.json", function (font) {
           const textGeometry = new TextGeometry(
-            modelAttribute.height.toString() + "kg",
+            modelAttribute.characteristic.toString(),
             {
               font: font,
               size: modelAttribute.height / 15,
@@ -238,8 +232,7 @@ function loadModel(modelAttribute, previousModelAttribute) {
           const textMesh = new THREE.Mesh(textGeometry, textMaterial);
           textMesh.position.set(
             modelAttribute.x - textWidth / 2, // Center the text
-            modelAttribute.y +
-              modelAttribute.height / 2 +
+            modelAttribute.height +
               modelAttribute.height / 6 -
               textHeight / 2 -
               textHeight / 10, // Adjust Y position
@@ -262,8 +255,14 @@ function createModelAttributes(models) {
   modelAttributes = [];
 
   for (let i = 0; i < models.length; i++) {
-    const modelAttribute = new Model(models[i].name, models[i].height);
-    modelAttribute.path = `${modelAttribute.name}/${modelAttribute.name}.gltf`;
+    const modelAttribute = new Model(
+      models[i].name,
+      models[i].fileName,
+      models[i].height,
+      models[i].characteristic,
+      models[i].isCenterDown,
+    );
+    modelAttribute.path = `${modelAttribute.fileName}/${modelAttribute.fileName}.gltf`;
     modelAttributes.push(modelAttribute);
   }
 
@@ -280,7 +279,7 @@ function createModelAttributes(models) {
           ? modelAttributes[i - 1].x +
             modelAttributes[i - 1].width / 2 +
             modelAttributes[i].width / 2 +
-            SPACE_BETWEEN_MODELS
+            (modelAttributes[i].width + modelAttributes[i - 1].width) / 2 / 4
           : 0;
     }
     for (let i = 0; i < modelAttributes.length; i++) {
@@ -293,6 +292,7 @@ function createModelAttributes(models) {
     Promise.all(modelPromises)
       .then(() => {
         console.log("All models are loaded");
+        console.log("Model Attributes:", modelAttributes);
         // Now create camera positions and start the animation
         const cameraHopPositions = createCameraHopPositions(modelAttributes);
         camera.position.set(
@@ -320,7 +320,7 @@ function createCameraHopPositions(modelAttributes) {
 
     cameraHopPositions.push({
       x: model.x,
-      y: (5.5 / 5) * model.y,
+      y: ((5.5 / 5) * model.height) / 2,
       z: calculatedZ,
     });
   });
@@ -337,11 +337,10 @@ function startWalking(modelAttributes, cameraHopPositions) {
       i > 0 ? modelAttribute.height / modelAttributes[i - 1].height : 1;
 
     tl.to(camera.position, {
-      duration: 0.3 * ((ratio * 5) / CAMERA_SPEED) + 0.7 * 2,
+      duration: 0.2 * ((ratio * 5) / CAMERA_SPEED) + 0.8 * 2,
       x: cameraPos.x,
       y: cameraPos.y,
       z: cameraPos.z,
-      // ease: "power2.out",
     });
   }
 }

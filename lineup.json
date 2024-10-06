@@ -1,5 +1,53 @@
 [
-  { "name": "bottle", "height": 2, "weight": "0.5kg" },
-  { "name": "man", "height": 18, "weight": "80" },
-  { "name": "empire_state_building", "height": 3600, "weight": "1000" }
+  {
+    "fileName": "bottle",
+    "name": "Bottle",
+    "height": 2,
+    "characteristic": "20 sm",
+    "isCenterDown": false
+  },
+  {
+    "fileName": "man",
+    "name": "Average Human",
+    "height": 18,
+    "characteristic": "1.80 m",
+    "isCenterDown": false
+  },
+  {
+    "fileName": "elephant",
+    "name": "African Bush Elephant",
+    "height": 32,
+    "characteristic": "3.2m",
+    "isCenterDown": true
+  },
+  {
+    "fileName": "house",
+    "name": "Two Story House",
+    "height": 76,
+    "characteristic": "7.6m",
+    "isCenterDown": true
+  },
+  {
+    "fileName": "ferris_wheel",
+    "name": "The Original Ferris Wheel",
+    "height": 804,
+    "characteristic": "3.2m",
+    "isCenterDown": true
+  },
+  {
+    "fileName": "eiffel_tower",
+    "name": "Eiffel Tower",
+    "height": 3300,
+    "characteristic": "330m",
+    "weight": "80",
+    "isCenterDown": true
+  },
+  {
+    "fileName": "empire_state_building",
+    "name": "Empire State Building",
+    "height": 4430,
+    "characteristic": "443m",
+    "weight": "1000",
+    "isCenterDown": false
+  }
 ]
