@@ -3,22 +3,14 @@ import * as am5map from "@amcharts/amcharts5/map";
 import am5geodata_worldLow from "@amcharts/amcharts5-geodata/worldLow";
 import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 import countryToCode from "./countryToCode.json";
-
-// const wasteData = {
-//   "United States": { waste: 5000 },
-//   China: { waste: 10000 },
-//   India: { waste: 3000 },
-//   Brazil: { waste: 2000 },
-//   Australia: { waste: 1500 },
-// };
-//
-
-import wasteData from "./waste_data.json";
+import wasteData from "./cleaned_data.json";
+import codeToCountry from "./codeToCountry.json";
 
 const polygonSeriesData = [];
+import visualizePlasticWaste from "./main.js";
 
+// Convert hex color to RGB
 function hexToRgb(hex) {
-  // Convert hex color to RGB
   const bigint = parseInt(hex.slice(1), 16);
   const r = (bigint >> 16) & 255;
   const g = (bigint >> 8) & 255;
@@ -26,31 +18,33 @@ function hexToRgb(hex) {
   return { r, g, b };
 }
 
+// Convert RGB to hex color
 function rgbToHex(r, g, b) {
-  // Convert RGB to hex color
   return (r << 16) | (g << 8) | b;
 }
 
-function getColor(percentage, startColor, endColor) {
-  // Ensure percentage is between 0 and 100
-  percentage = Math.max(0, Math.min(100, percentage));
+// Get color based on waste amount using logarithmic scaling with power transformation
+function getColor(waste, maxWaste, startColor, endColor) {
+  const logWaste = Math.log(waste + 1); // Log waste
+  const logMaxWaste = Math.log(maxWaste + 1); // Log max waste for normalization
+  const percentage = (logWaste / logMaxWaste) * 100; // Scale to percentage
 
-  // Convert hex colors to RGB
+  // Apply power transformation to create more disparity
+  const transformedPercentage = Math.pow(percentage / 100, 1.5) * 100; // Adjust the exponent to control the disparity
+
   const startRgb = hexToRgb(startColor);
   const endRgb = hexToRgb(endColor);
 
-  // Interpolate between the two colors
   const r = Math.floor(
-    startRgb.r + (endRgb.r - startRgb.r) * (percentage / 100),
+    startRgb.r + (endRgb.r - startRgb.r) * (transformedPercentage / 100),
   );
   const g = Math.floor(
-    startRgb.g + (endRgb.g - startRgb.g) * (percentage / 100),
+    startRgb.g + (endRgb.g - startRgb.g) * (transformedPercentage / 100),
   );
   const b = Math.floor(
-    startRgb.b + (endRgb.b - startRgb.b) * (percentage / 100),
+    startRgb.b + (endRgb.b - startRgb.b) * (transformedPercentage / 100),
   );
 
-  // Return the color as an amCharts color
   return am5.color(rgbToHex(r, g, b));
 }
 
@@ -59,20 +53,29 @@ const startColor = "#FFFFFF"; // White
 const endColor = "#8B0000"; // Dark Red
 
 let maxWaste = 0;
+
+// Determine the maximum waste value
 for (let country in wasteData) {
-  if (wasteData[country]?.waste > maxWaste) {
-    maxWaste = wasteData[country]?.waste;
+  console.log(country, wasteData[country].waste);
+  if (wasteData[country].waste > maxWaste) {
+    maxWaste = wasteData[country].waste;
   }
 }
+console.log(maxWaste);
 
+// Prepare polygon series data with colors
 for (let country in wasteData) {
   if (!countryToCode[country]) {
     console.log(`Country not found: ${country}`);
     continue;
   }
 
-  const wastePercentage = (wasteData[country]?.waste / maxWaste) * 100; // Scale to a percentage
-  const color = getColor(wastePercentage, startColor, endColor); // Get the color based on percentage
+  const color = getColor(
+    wasteData[country]?.waste,
+    maxWaste,
+    startColor,
+    endColor,
+  ); // Get the color based on logarithmic value
 
   polygonSeriesData.push({
     id: countryToCode[country],
@@ -97,7 +100,7 @@ am5.ready(function () {
       panX: "rotateX",
       panY: "rotateY",
       projection: am5map.geoOrthographic(),
-      paddingTop: 100,
+      paddingTop: 25,
       paddingRight: 100,
       paddingBottom: 100,
       paddingLeft: 100,
@@ -127,7 +130,6 @@ am5.ready(function () {
   var polygonSeries = chart.series.push(
     am5map.MapPolygonSeries.new(root, {
       geoJSON: am5geodata_worldLow,
-      // Exclude all countries by default
     }),
   );
 
@@ -163,19 +165,11 @@ am5.ready(function () {
   });
 
   // Create series for background fill
-
   var graticuleSeries = chart.series.unshift(
     am5map.GraticuleSeries.new(root, {
       step: 10,
     }),
   );
-
-  // chart.set(
-  //   "background",
-  //   am5.Fill.new(root, {
-  //     color: am5.color(0xffffff), // Set your desired color here (e.g., blue)
-  //   }),
-  // );
 
   graticuleSeries.mapLines.template.set("strokeOpacity", 0.1);
 
@@ -192,9 +186,45 @@ am5.ready(function () {
     previousPolygon = target;
   });
 
+  // Update the selectCountry function
+  // Add a variable to store the selected country
+  let selectedCountry = null;
+
+  // Select the button from the DOM
+  const selectCountryButton = document.getElementById("selectCountryButton");
+
+  // Update the selectCountry function
+  const defaultColor = am5.color(0xd4d4d4); // Grey color for all countries
+
+  // Update the selectCountry function
   function selectCountry(id) {
+    console.log("Selecting country:", id);
+    selectedCountry = id; // Store the selected country
+
+    // Get the country data from polygonSeriesData to retrieve its color
+    const countryData = polygonSeriesData.find(
+      (country) => country.id === selectedCountry,
+    );
+
+    // Update button properties based on country selection
+    if (countryData) {
+      selectCountryButton.textContent = `Click to visualize the plastic waste for ${codeToCountry[id]}`;
+      selectCountryButton.style.backgroundColor =
+        countryData.polygonSettings.fill.toString();
+      selectCountryButton.style.color = "white"; // Ensure text is visible on dark colors
+    } else {
+      selectCountryButton.textContent = `Data for ${codeToCountry[id]} not available`;
+      selectCountryButton.style.backgroundColor = defaultColor.toString();
+      selectCountryButton.style.color = "black"; // Change text color for visibility
+    }
+
+    // Enable the button by adding an event listener to call the visualization function when clicked
+    selectCountryButton.onclick = () => {
+      visualizePlasticWaste(selectedCountry); // Call the function to visualize plastic waste
+    };
+
     var dataItem = polygonSeries.getDataItemById(id);
-    var target = dataItem.get("mapPolygon");
+    var target = dataItem ? dataItem.get("mapPolygon") : null; // Get target only if dataItem exists
     if (target) {
       var centroid = target.geoCentroid();
       if (centroid) {
@@ -213,6 +243,8 @@ am5.ready(function () {
       }
     }
   }
+
+  // Function to visualize plastic waste data for the selected country
 
   // Make stuff animate on load
   chart.appear(1000, 100);

@@ -11,13 +11,6 @@ import {
 import models from "/lineup.json";
 import { gsap } from "gsap";
 
-function sleep(milliseconds) {
-  const start = Date.now();
-  while (Date.now() - start < milliseconds) {
-    // Block the thread for the specified duration
-  }
-}
-
 const SPACE_BETWEEN_MODELS = 3;
 const CAMERA_FOV = 45;
 const CAMERA_SPEED = 5;
