@@ -207,12 +207,12 @@ am5.ready(function () {
 
     // Update button properties based on country selection
     if (countryData) {
-      selectCountryButton.textContent = `Click to visualize the plastic waste for ${codeToCountry[id]}`;
+      selectCountryButton.textContent = `Click to visualize the mismanaged plastic waste for ${codeToCountry[id]}`;
       selectCountryButton.style.backgroundColor =
         countryData.polygonSettings.fill.toString();
       selectCountryButton.style.color = "white"; // Ensure text is visible on dark colors
     } else {
-      selectCountryButton.textContent = `Data for ${codeToCountry[id]} not available`;
+      selectCountryButton.textContent = `Data for this country is not available`;
       selectCountryButton.style.backgroundColor = defaultColor.toString();
       selectCountryButton.style.color = "black"; // Change text color for visibility
     }

@@ -17,7 +17,7 @@ window.onload = function () {
   const country = localStorage.getItem("country");
   if (data && plasticHeight && country) {
     document.getElementById("title").innerHTML =
-      `Estimated mismanaged waste in <strong>${country}</strong> in 2024 which will be <strong>${data.mwi}%</strong> of the country's total plastic waste this year`;
+      `Estimated mismanaged waste in <strong>${country}</strong> in 2024 which will be <strong>${data.mwi}%</strong> of the country's total plastic waste this year, represented with a trash bag filled with water bottles`;
     const heightt = plasticHeight;
     const plasticModel = {
       fileName: "trash_bag",
@@ -26,7 +26,9 @@ window.onload = function () {
       characteristic: `${data.waste.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")} tons`,
       isCenterDown: true,
     };
-    const models = modelsOg.concat(plasticModel);
+    const models = modelsOg
+      .filter((model) => model.height <= heightt) // Keep models with height <= heightt
+      .concat(plasticModel); // Add the plasticModel at the end
 
     const SPACE_BETWEEN_MODELS = 3;
     const CAMERA_FOV = 45;

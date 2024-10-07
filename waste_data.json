@@ -1,862 +1,1015 @@
 {
-    "Australia": {
-        "waste": "130 407 tons of plastic",
-        "mwi": "6.27%",
-        "archetype": "The Overloaders"
-    },
-    "Ghana": {
-        "waste": "374 213 tons of plastic",
-        "mwi": "87.13%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Qatar": {
-        "waste": "193 999 tons of plastic",
-        "mwi": "71.82%",
-        "archetype": "The Toxic Waste Producers"
-    },
-    "Netherlands": {
-        "waste": "217 997 tons of plastic",
-        "mwi": "13.68%",
-        "archetype": "The Transactors"
-    },
-    "Colombia": {
-        "waste": "315 506 tons of plastic",
-        "mwi": "26.21%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Eritrea": {
-        "waste": "90 954 tons of plastic",
-        "mwi": "97.34%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Republic": {
-        "waste": "1 263 tons of plastic",
-        "mwi": "95.89%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Guinea-Bissau": {
-        "waste": "11 717 tons of plastic",
-        "mwi": "95.62%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "C\u00f4te": {
-        "waste": "192 146 tons of plastic",
-        "mwi": "95.53%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Malawi": {
-        "waste": "29 858 tons of plastic",
-        "mwi": "95.47%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Ethiopia": {
-        "waste": "195 672 tons of plastic",
-        "mwi": "94.83%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Mozambique": {
-        "waste": "151 694 tons of plastic",
-        "mwi": "94.94%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Mali": {
-        "waste": "48 617 tons of plastic",
-        "mwi": "94.32%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Leone": {
-        "waste": "33 091 tons of plastic",
-        "mwi": "94.23%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Madagascar": {
-        "waste": "58 232 tons of plastic",
-        "mwi": "93.87%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Kuwait": {
-        "waste": "354 918 tons of plastic",
-        "mwi": "93.57%",
-        "archetype": "The Toxic Waste Producers"
-    },
-    "Rwanda": {
-        "waste": "24 352 tons of plastic",
-        "mwi": "93.44%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Niger": {
-        "waste": "25 047 tons of plastic",
-        "mwi": "93.17%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Comoros": {
-        "waste": "5 865 tons of plastic",
-        "mwi": "92.89%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Rep": {
-        "waste": "133 804 tons of plastic",
-        "mwi": "93.03%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Curacao": {
-        "waste": "5 415 tons of plastic",
-        "mwi": "93.08%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Lesotho": {
-        "waste": "23 043 tons of plastic",
-        "mwi": "93.01%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Liberia": {
-        "waste": "29 365 tons of plastic",
-        "mwi": "92.70%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Senegal": {
-        "waste": "174 398 tons of plastic",
-        "mwi": "92.12%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Uzbekistan": {
-        "waste": "374 671 tons of plastic",
-        "mwi": "92.27%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Uganda": {
-        "waste": "79 207 tons of plastic",
-        "mwi": "91.82%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Botswana": {
-        "waste": "49 115 tons of plastic",
-        "mwi": "91.11%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Yemen": {
-        "waste": "320 531 tons of plastic",
-        "mwi": "90.94%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Faso": {
-        "waste": "77 636 tons of plastic",
-        "mwi": "90.67%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Burundi": {
-        "waste": "13 609 tons of plastic",
-        "mwi": "90.60%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Namibia": {
-        "waste": "48 742 tons of plastic",
-        "mwi": "90.53%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Somalia": {
-        "waste": "63 617 tons of plastic",
-        "mwi": "90.45%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Tanzania": {
-        "waste": "303 460 tons of plastic",
-        "mwi": "90.56%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Sudan": {
-        "waste": "17 760 tons of plastic",
-        "mwi": "90.24%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Chad": {
-        "waste": "11 322 tons of plastic",
-        "mwi": "89.79%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Zambia": {
-        "waste": "118 104 tons of plastic",
-        "mwi": "89.35%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Gambia": {
-        "waste": "27 649 tons of plastic",
-        "mwi": "89.29%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Guinea": {
-        "waste": "74 034 tons of plastic",
-        "mwi": "89.21%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Lanka": {
-        "waste": "232 266 tons of plastic",
-        "mwi": "89.24%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Islands": {
-        "waste": "5 106 tons of plastic",
-        "mwi": "88.42%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Armenia": {
-        "waste": "43 788 tons of plastic",
-        "mwi": "88.09%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Azerbaijan": {
-        "waste": "122 146 tons of plastic",
-        "mwi": "88.04%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Oman": {
-        "waste": "503 850 tons of plastic",
-        "mwi": "88.17%",
-        "archetype": "The Toxic Waste Producers"
-    },
-    "Nigeria": {
-        "waste": "1 300 225 tons of plastic",
-        "mwi": "87.52%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Togo": {
-        "waste": "135 836 tons of plastic",
-        "mwi": "87.66%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Kenya": {
-        "waste": "390 898 tons of plastic",
-        "mwi": "87.30%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Mauritania": {
-        "waste": "76 181 tons of plastic",
-        "mwi": "87.32%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Tajikistan": {
-        "waste": "39 048 tons of plastic",
-        "mwi": "87.13%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Maldives": {
-        "waste": "17 219 tons of plastic",
-        "mwi": "86.62%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Zimbabwe": {
-        "waste": "106 428 tons of plastic",
-        "mwi": "86.70%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Angola": {
-        "waste": "202 685 tons of plastic",
-        "mwi": "86.42%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Pakistan": {
-        "waste": "1 692 002 tons of plastic",
-        "mwi": "86.38%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Afghanistan": {
-        "waste": "47 021 tons of plastic",
-        "mwi": "86.28%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Benin": {
-        "waste": "50 316 tons of plastic",
-        "mwi": "86.10%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Cameroon": {
-        "waste": "113 953 tons of plastic",
-        "mwi": "85.80%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Eswatini": {
-        "waste": "17 828 tons of plastic",
-        "mwi": "85.89%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Djibouti": {
-        "waste": "13 056 tons of plastic",
-        "mwi": "85.63%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Kazakhstan": {
-        "waste": "625 328 tons of plastic",
-        "mwi": "85.66%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Pr\u00edncipe": {
-        "waste": "1 416 tons of plastic",
-        "mwi": "85.54%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Iraq": {
-        "waste": "482 335 tons of plastic",
-        "mwi": "85.17%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Myanmar": {
-        "waste": "295 960 tons of plastic",
-        "mwi": "84.91%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Nepal": {
-        "waste": "205 092 tons of plastic",
-        "mwi": "84.71%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Haiti": {
-        "waste": "88 781 tons of plastic",
-        "mwi": "84.29%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Egypt": {
-        "waste": "1 718 737 tons of plastic",
-        "mwi": "83.87%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Suriname": {
-        "waste": "11 431 tons of plastic",
-        "mwi": "83.85%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Bangladesh": {
-        "waste": "1 211 268 tons of plastic",
-        "mwi": "83.17%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Kosovo": {
-        "waste": "31 303 tons of plastic",
-        "mwi": "83.28%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Gabon": {
-        "waste": "20 519 tons of plastic",
-        "mwi": "82.67%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Aruba": {
-        "waste": "3 100 tons of plastic",
-        "mwi": "82.28%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Emirates": {
-        "waste": "975 453 tons of plastic",
-        "mwi": "82.28%",
-        "archetype": "The Toxic Waste Producers"
-    },
-    "Cambodia": {
-        "waste": "182 956 tons of plastic",
-        "mwi": "81.69%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Congo": {
-        "waste": "39 600 tons of plastic",
-        "mwi": "81.62%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Saudi Arabia": {
-        "waste": "1 145 112 tons of plastic",
-        "mwi": "52.22%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Central African Republic": {
-        "waste": "1 263 tons of plastic",
-        "mwi": "95.89%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "South Sudan": {
-        "waste": "17 760 tons of plastic",
-        "mwi": "90.24%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Micronesia": {
-        "waste": "1 200 tons of plastic",
-        "mwi": "81.31%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Gaza": {
-        "waste": "171 277 tons of plastic",
-        "mwi": "81.18%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Timor-Leste": {
-        "waste": "4 688 tons of plastic",
-        "mwi": "80.04%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Verde": {
-        "waste": "5 734 tons of plastic",
-        "mwi": "79.44%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Iran": {
-        "waste": "2 021 194 tons of plastic",
-        "mwi": "78.41%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Bhutan": {
-        "waste": "8 155 tons of plastic",
-        "mwi": "78.11%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Georgia": {
-        "waste": "70 691 tons of plastic",
-        "mwi": "78.35%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Moldova": {
-        "waste": "49 798 tons of plastic",
-        "mwi": "76.68%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Tuvalu": {
-        "waste": "194 tons of plastic",
-        "mwi": "76.36%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "PDR": {
-        "waste": "64 757 tons of plastic",
-        "mwi": "75.23%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Nicaragua": {
-        "waste": "119 200 tons of plastic",
-        "mwi": "73.78%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Bahrain": {
-        "waste": "102 559 tons of plastic",
-        "mwi": "73.16%",
-        "archetype": "The Toxic Waste Producers"
-    },
-    "Mongolia": {
-        "waste": "42 109 tons of plastic",
-        "mwi": "73.07%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "locally. These": {
-        "waste": "25 kg per capita per year",
-        "mwi": "countries",
-        "archetype": ""
-    },
-    "India": {
-        "waste": "7 430 630 tons of plastic",
-        "mwi": "68.62%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "do not": {
-        "waste": "50 kg per capita per year",
-        "mwi": "receiving the",
-        "archetype": ""
-    },
-    "Romania": {
-        "waste": "392 687 tons of plastic",
-        "mwi": "41.36%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Serbia": {
-        "waste": "74 311 tons of plastic",
-        "mwi": "40.42%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Greece": {
-        "waste": "332 501 tons of plastic",
-        "mwi": "39.56%",
-        "archetype": "The Overloaders"
-    },
-    "Samoa": {
-        "waste": "1 000 tons of plastic",
-        "mwi": "38.40%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Brazil": {
-        "waste": "2 560 150 tons of plastic",
-        "mwi": "38.38%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Andorra": {
-        "waste": "1 754 tons of plastic",
-        "mwi": "38.06%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Argentina": {
-        "waste": "594 669 tons of plastic",
-        "mwi": "37.11%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Palau": {
-        "waste": "188 tons of plastic",
-        "mwi": "37.22%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Turkmenistan": {
-        "waste": "31 837 tons of plastic",
-        "mwi": "36.85%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Salvador": {
-        "waste": "86 945 tons of plastic",
-        "mwi": "36.31%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Bulgaria": {
-        "waste": "118 145 tons of plastic",
-        "mwi": "35.48%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Liechtenstein": {
-        "waste": "663 tons of plastic",
-        "mwi": "35.40%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Caledonia": {
-        "waste": "3 566 tons of plastic",
-        "mwi": "35.34%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Rica": {
-        "waste": "75 817 tons of plastic",
-        "mwi": "34.72%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Mexico": {
-        "waste": "2 142 167 tons of plastic",
-        "mwi": "34.36%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Dominica": {
-        "waste": "621 tons of plastic",
-        "mwi": "32.82%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Macedonia": {
-        "waste": "26 826 tons of plastic",
-        "mwi": "32.76%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Chile": {
-        "waste": "439 326 tons of plastic",
-        "mwi": "30.44%",
-        "archetype": "The Overloaders"
-    },
-    "Grenadines": {
-        "waste": "408 tons of plastic",
-        "mwi": "30.21%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Israel": {
-        "waste": "206 148 tons of plastic",
-        "mwi": "26.97%",
-        "archetype": "The Overloaders"
-    },
-    "Malaysia": {
-        "waste": "382 605 tons of plastic",
-        "mwi": "26.35%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Seychelles": {
-        "waste": "1 211 tons of plastic",
-        "mwi": "26.13%",
-        "archetype": "The Self-Sustainers"
-    },
-    "China": {
-        "waste": "13 974 084 tons of plastic",
-        "mwi": "25.09%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Lucia": {
-        "waste": "788 tons of plastic",
-        "mwi": "24.72%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Grenada": {
-        "waste": "346 tons of plastic",
-        "mwi": "24.40%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Belarus": {
-        "waste": "49 162 tons of plastic",
-        "mwi": "23.89%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Algeria": {
-        "waste": "173 207 tons of plastic",
-        "mwi": "23.25%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Latvia": {
-        "waste": "20 496 tons of plastic",
-        "mwi": "22.72%",
-        "archetype": "The Transactors"
-    },
-    "Brunei": {
-        "waste": "4 329 tons of plastic",
-        "mwi": "21.45%",
-        "archetype": "The Self-Sustainers"
-    },
-    "part)": {
-        "waste": "422 tons of plastic",
-        "mwi": "21.23%",
-        "archetype": "The Overloaders"
-    },
-    "(U.S.)": {
-        "waste": "4 330 tons of plastic",
-        "mwi": "21.23%",
-        "archetype": "The Overloaders"
-    },
-    "Bahamas": {
-        "waste": "1 804 tons of plastic",
-        "mwi": "21.07%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Rico": {
-        "waste": "91 299 tons of plastic",
-        "mwi": "19.65%",
-        "archetype": "The Overloaders"
-    },
-    "Gibraltar": {
-        "waste": "402 tons of plastic",
-        "mwi": "19.33%",
-        "archetype": "The Overloaders"
-    },
-    "Italy": {
-        "waste": "606 690 tons of plastic",
-        "mwi": "18.66%",
-        "archetype": "The Overloaders"
-    },
-    "Guam": {
-        "waste": "426 tons of plastic",
-        "mwi": "17.63%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Cyprus": {
-        "waste": "8 803 tons of plastic",
-        "mwi": "15.32%",
-        "archetype": "The Transactors"
-    },
-    "Germany": {
-        "waste": "616 829 tons of plastic",
-        "mwi": "13.98%",
-        "archetype": "The Overloaders"
-    },
-    "Barbados": {
-        "waste": "1 959 tons of plastic",
-        "mwi": "12.82%",
-        "archetype": "The Overloaders"
-    },
-    "Estonia": {
-        "waste": "13 767 tons of plastic",
-        "mwi": "11.63%",
-        "archetype": "The Overloaders"
-    },
-    "Ireland": {
-        "waste": "30 522 tons of plastic",
-        "mwi": "9.99%",
-        "archetype": "The Overloaders"
-    },
-    "Monaco": {
-        "waste": "47 tons of plastic",
-        "mwi": "9.60%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Slovenia": {
-        "waste": "15 877 tons of plastic",
-        "mwi": "9.37%",
-        "archetype": "The Transactors"
-    },
-    "Portugal": {
-        "waste": "51 328 tons of plastic",
-        "mwi": "9.18%",
-        "archetype": "The Overloaders"
-    },
-    "Spain": {
-        "waste": "187 281 tons of plastic",
-        "mwi": "8.87%",
-        "archetype": "The Overloaders"
-    },
-    "Malta": {
-        "waste": "1 942 tons of plastic",
-        "mwi": "8.11%",
-        "archetype": "The Overloaders"
-    },
-    "Croatia": {
-        "waste": "14 001 tons of plastic",
-        "mwi": "7.49%",
-        "archetype": "The Overloaders"
-    },
-    "Poland": {
-        "waste": "196 327 tons of plastic",
-        "mwi": "6.92%",
-        "archetype": "The Overloaders"
-    },
-    "Hungary": {
-        "waste": "32 769 tons of plastic",
-        "mwi": "6.57%",
-        "archetype": "The Overloaders"
-    },
-    "Austria": {
-        "waste": "24 476 tons of plastic",
-        "mwi": "5.77%",
-        "archetype": "The Transactors"
-    },
-    "Belgium": {
-        "waste": "102 920 tons of plastic",
-        "mwi": "6.00%",
-        "archetype": "The Overloaders"
-    },
-    "Nevis": {
-        "waste": "58 tons of plastic",
-        "mwi": "5.85%",
-        "archetype": "The Self-Sustainers"
-    },
-    "Sweden": {
-        "waste": "36 519 tons of plastic",
-        "mwi": "5.86%",
-        "archetype": "The Overloaders"
-    },
-    "Kingdom": {
-        "waste": "245 140 tons of plastic",
-        "mwi": "6.03%",
-        "archetype": "The Overloaders"
-    },
-    "France": {
-        "waste": "226 083 tons of plastic",
-        "mwi": "5.61%",
-        "archetype": "The Overloaders"
-    },
-    "Lithuania": {
-        "waste": "10 151 tons of plastic",
-        "mwi": "5.48%",
-        "archetype": "The Transactors"
-    },
-    "Canada": {
-        "waste": "162 007 tons of plastic",
-        "mwi": "5.22%",
-        "archetype": "The Overloaders"
-    },
-    "Switzerland": {
-        "waste": "24 837 tons of plastic",
-        "mwi": "5.21%",
-        "archetype": "The Overloaders"
-    },
-    "Greenland": {
-        "waste": "152 tons of plastic",
-        "mwi": "5.06%",
-        "archetype": "The Overloaders"
-    },
-    "States": {
-        "waste": "1 604 287 tons of plastic",
-        "mwi": "5.07%",
-        "archetype": "The Overloaders"
-    },
-    "Libya": {
-        "waste": "96 840 tons of plastic",
-        "mwi": "66.35%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Tunisia": {
-        "waste": "120 317 tons of plastic",
-        "mwi": "49.95%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Morocco": {
-        "waste": "461 693 tons of plastic",
-        "mwi": "61.62%%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Russia": {
-        "waste": "3 182 063 tons of plastic",
-        "mwi": "60.00%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Denmark": {
-        "waste": "20 382 tons of plastic",
-        "mwi": "4.84%",
-        "archetype": "The Overloaders"
-    },
-    "Luxembourg": {
-        "waste": "3 078 tons of plastic",
-        "mwi": "4.50%",
-        "archetype": "The Transactors"
-    },
-    "Norway": {
-        "waste": "20 006 tons of plastic",
-        "mwi": "4.60%",
-        "archetype": "The Overloaders"
-    },
-    "Taiwan": {
-        "waste": "71 378 tons of plastic",
-        "mwi": "4.49%",
-        "archetype": "The Overloaders"
-    },
-    "Man": {
-        "waste": "260 tons of plastic",
-        "mwi": "4.00%",
-        "archetype": "The Overloaders"
-    },
-    "Japan": {
-        "waste": "201 538 tons of plastic",
-        "mwi": "3.77%",
-        "archetype": "The Overloaders"
-    },
-    "Zealand": {
-        "waste": "8 415 tons of plastic",
-        "mwi": "3.28%",
-        "archetype": "The Overloaders"
-    },
-    "Finland": {
-        "waste": "8 191 tons of plastic",
-        "mwi": "2.81%",
-        "archetype": "The Overloaders"
-    },
-    "Singapore": {
-        "waste": "14 493 tons of plastic",
-        "mwi": "2.80%",
-        "archetype": "The Overloaders"
-    },
-    "Barbuda": {
-        "waste": "111 tons of plastic",
-        "mwi": "2.61%",
-        "archetype": "The Overloaders"
-    },
-    "Iceland": {
-        "waste": "832 tons of plastic",
-        "mwi": "2.68%",
-        "archetype": "The Overloaders"
-    },
-    "Turkey": {
-        "waste": "1 484 942 tons of plastic",
-        "mwi": "52.83%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Burkina Faso": {
-        "waste": "77 636 tons of plastic",
-        "mwi": "90.67%",
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Thailand": {
-        "waste": "1 472 227 tons of plastic",
-        "mwi": "45.88%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Indonesia": {
-        "waste": "1 848 033 tons of plastic",
-        "mwi": "43.78%",
-        "archetype": "The Moderate Polluters"
-    },
-    "Korea": {
-        "waste": "68 780 tons of plastic",
-        "mwi": "2.60%",
-        "archetype": "The Overloaders"
-    },
-    "Bermuda": {
-        "waste": "37 tons of plastic",
-        "mwi": "1.32%",
-        "archetype": "The Overloaders"
-    }
+  "Australia": {
+    "waste": "130 407 tons of plastic",
+    "mwi": "83.28%",
+    "archetype": "The Overloaders"
+  },
+  "Mauritius": {
+    "waste": "13 197 tons of plastic",
+    "mwi": "48.23%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Trinidad and Tobago": {
+    "waste": "45 769 tons of plastic",
+    "mwi": "77.71%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Vanuatu": {
+    "waste": "1 391 tons of plastic",
+    "mwi": "66.05%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Fiji": {
+    "waste": "19 069 tons of plastic",
+    "mwi": "49.27%",
+    "archetype": "The Moderate Polluters"
+  },
+  "New Caledonia": {
+    "waste": "3 566 tons of plastic",
+    "mwi": "35.34%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Republic of Congo": {
+    "waste": " 39 600 tons of plastic",
+    "mwi": "81.62%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Uruguay": {
+    "waste": "123 268 tons of plastic",
+    "mwi": "73.48%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Paraguay": {
+    "waste": " 79 636 tons of plastic",
+    "mwi": "60.95%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Bolivia": {
+    "waste": " 119 475 tons of plastic",
+    "mwi": "62.36%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Peru": {
+    "waste": "420 279 tons of plastic",
+    "mwi": "46.31%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Ecuador": {
+    "waste": "188 833 tons of plastic",
+    "mwi": "48.09%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Guyana": {
+    "waste": "13 206 tons of plastic",
+    "mwi": "52.46%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Venezuela": {
+    "waste": "657 770 tons of plastic",
+    "mwi": "52.33%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Dominican Republic": {
+    "waste": "320 679 tons of plastic",
+    "mwi": "84.07%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Jamaica": {
+    "waste": "57 422 tons of plastic",
+    "mwi": "68.85%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Cuba": {
+    "waste": "193 948 tons of plastic",
+    "mwi": "69.84%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Panama": {
+    "waste": "99 952 tons of plastic",
+    "mwi": "53.16%",
+    "archetype": "The Moderate Polluters"
+  },
+  "El Salvador": {
+    "waste": "86 945 tons of plastic",
+    "mwi": "36.31%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Honduras": {
+    "waste": "112 020 tons of plastic",
+    "mwi": "62.67%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Belize": {
+    "waste": "10 119 tons of plastic",
+    "mwi": "57.72%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Guatemala": {
+    "waste": "281 398 tons of plastic",
+    "mwi": "66.94%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Papua New Guinea": {
+    "waste": "22 461 tons of plastic",
+    "mwi": "54.09%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Philippines": {
+    "waste": " 842 033 tons of plastic",
+    "mwi": "55.73%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Australia": {
+    "waste": "130 407 tons of plastic",
+    "mwi": "83.28%",
+    "archetype": "The Overloaders"
+  },
+  "Vietnam": {
+    "waste": "2 042 259 tons of plastic",
+    "mwi": "53.75%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Lao People's Democratic Republic": {
+    "waste": " 64 757 tons of plastic",
+    "mwi": "75.23%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Kyrgyzstan": {
+    "waste": "98 393 tons of plastic",
+    "mwi": "79.80%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Jordan": {
+    "waste": "216 209 tons of plastic",
+    "mwi": "62.95%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Lebanon": {
+    "waste": "72 587 tons of plastic",
+    "mwi": "54.79%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Syria": {
+    "waste": "94 183 tons of plastic",
+    "mwi": "85.10%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Czechia": {
+    "waste": "53 404 tons of plastic",
+    "mwi": "7.50%",
+    "archetype": "The Overloaders"
+  },
+  "Slovakia": {
+    "waste": "40 684 tons of plastic",
+    "mwi": "12.29%",
+    "archetype": "The Overloaders"
+  },
+  "Ukraine": {
+    "waste": "445 503 tons of plastic",
+    "mwi": "54.27%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Kosovo": {
+    "waste": "31 303 tons of plastic",
+    "mwi": "6.27%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "North Macedonia": {
+    "waste": "26 826 tons of plastic",
+    "mwi": "32.76%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Albania": {
+    "waste": "39 219 tons of plastic",
+    "mwi": "57.71%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Bosnia and Herzegovina": {
+    "waste": "55 514 tons of plastic",
+    "mwi": "60.15%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Montenegro": {
+    "waste": "32 672 tons of plastic",
+    "mwi": "81.15%",
+    "archetype": "The Moderate Polluters"
+  },
+  "United Kingdom": {
+    "waste": "245 140 tons of plastic",
+    "mwi": "6.03%",
+    "archetype": "The Overloaders"
+  },
+  "Democratic Republic of Congo": {
+    "waste": "133 804 tons of plastic",
+    "mwi": "93.03%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Equatorial Guinea": {
+    "waste": "18 365 tons of plastic",
+    "mwi": "61.44%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Sierra Leone": {
+    "waste": "33 091 tons of plastic",
+    "mwi": "94.23%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Ghana": {
+    "waste": "374 213 tons of plastic",
+    "mwi": "87.13%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+"South Africa": {
+  "waste": "725 803 tons of plastic",
+  "mwi": "55.70%",
+  "archetype": "The Moderate Polluters"
+},
+  "Qatar": {
+    "waste": "193 999 tons of plastic",
+    "mwi": "71.82%",
+    "archetype": "The Toxic Waste Producers"
+  },
+  "Netherlands": {  
+    "waste": "217 997 tons of plastic",
+    "mwi": "13.68%",
+    "archetype": "The Transactors"
+  },
+  "Colombia": {
+    "waste": "315 506 tons of plastic",
+    "mwi": "26.21%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Eritrea": {
+    "waste": "90 954 tons of plastic",
+    "mwi": "97.34%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  
+  "Guinea-Bissau": {
+    "waste": "11 717 tons of plastic",
+    "mwi": "95.62%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Côte d'Ivoire": {
+    "waste": "192 146 tons of plastic",
+    "mwi": "95.53%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Malawi": {
+    "waste": "29 858 tons of plastic",
+    "mwi": "95.47%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Ethiopia": {
+    "waste": "195 672 tons of plastic",
+    "mwi": "94.83%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Mozambique": {
+    "waste": "151 694 tons of plastic",
+    "mwi": "94.94%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Mali": {
+    "waste": "48 617 tons of plastic",
+    "mwi": "94.32%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Madagascar": {
+    "waste": "58 232 tons of plastic",
+    "mwi": "93.87%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Kuwait": {
+    "waste": "354 918 tons of plastic",
+    "mwi": "93.57%",
+    "archetype": "The Toxic Waste Producers"
+  },
+  "Rwanda": {
+    "waste": "24 352 tons of plastic",
+    "mwi": "93.44%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Niger": {
+    "waste": "25 047 tons of plastic",
+    "mwi": "93.17%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Comoros": {
+    "waste": "5 865 tons of plastic",
+    "mwi": "92.89%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Curacao": {
+    "waste": "5 415 tons of plastic",
+    "mwi": "93.08%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Lesotho": {
+    "waste": "23 043 tons of plastic",
+    "mwi": "93.01%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Liberia": {
+    "waste": "29 365 tons of plastic",
+    "mwi": "92.70%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Senegal": {
+    "waste": "174 398 tons of plastic",
+    "mwi": "92.12%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Uzbekistan": {
+    "waste": "374 671 tons of plastic",
+    "mwi": "92.27%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Uganda": {
+    "waste": "79 207 tons of plastic",
+    "mwi": "91.82%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Botswana": {
+    "waste": "49 115 tons of plastic",
+    "mwi": "91.11%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Yemen": {
+    "waste": "320 531 tons of plastic",
+    "mwi": "90.94%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  
+  "Burundi": {
+    "waste": "13 609 tons of plastic",
+    "mwi": "90.60%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Namibia": {
+    "waste": "48 742 tons of plastic",
+    "mwi": "90.53%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Somalia": {
+    "waste": "63 617 tons of plastic",
+    "mwi": "90.45%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Tanzania": {
+    "waste": "303 460 tons of plastic",
+    "mwi": "90.56%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Sudan": {
+    "waste": "17 760 tons of plastic",
+    "mwi": "90.24%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Chad": {
+    "waste": "11 322 tons of plastic",
+    "mwi": "89.79%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Zambia": {
+    "waste": "118 104 tons of plastic",
+    "mwi": "89.35%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Gambia": {
+    "waste": "27 649 tons of plastic",
+    "mwi": "89.29%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Guinea": {
+    "waste": "74 034 tons of plastic",
+    "mwi": "89.21%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Sri Lanka": {
+    "waste": "232 266 tons of plastic",
+    "mwi": "89.24%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Solomon Islands": {
+    "waste": "5 106 tons of plastic",
+    "mwi": "88.42%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Armenia": {
+    "waste": "43 788 tons of plastic",
+    "mwi": "88.09%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Azerbaijan": {
+    "waste": "122 146 tons of plastic",
+    "mwi": "88.04%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Oman": {
+    "waste": "503 850 tons of plastic",
+    "mwi": "88.17%",
+    "archetype": "The Toxic Waste Producers"
+  },
+  "Nigeria": {
+    "waste": "1 300 225 tons of plastic",
+    "mwi": "87.52%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Togo": {
+    "waste": "135 836 tons of plastic",
+    "mwi": "87.66%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Kenya": {
+    "waste": "390 898 tons of plastic",
+    "mwi": "87.30%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Mauritania": {
+    "waste": "76 181 tons of plastic",
+    "mwi": "87.32%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Tajikistan": {
+    "waste": "39 048 tons of plastic",
+    "mwi": "87.13%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Maldives": {
+    "waste": "17 219 tons of plastic",
+    "mwi": "86.62%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Zimbabwe": {
+    "waste": "106 428 tons of plastic",
+    "mwi": "86.70%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Angola": {
+    "waste": "202 685 tons of plastic",
+    "mwi": "86.42%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Pakistan": {
+    "waste": "1 692 002 tons of plastic",
+    "mwi": "86.38%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Afghanistan": {
+    "waste": "47 021 tons of plastic",
+    "mwi": "86.28%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Benin": {
+    "waste": "50 316 tons of plastic",
+    "mwi": "86.10%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Cameroon": {
+    "waste": "113 953 tons of plastic",
+    "mwi": "85.80%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Eswatini": {
+    "waste": "17 828 tons of plastic",
+    "mwi": "85.89%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Djibouti": {
+    "waste": "13 056 tons of plastic",
+    "mwi": "85.63%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Kazakhstan": {
+    "waste": "625 328 tons of plastic",
+    "mwi": "85.66%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "São Tomé and Príncipe": {
+    "waste": "1 416 tons of plastic",
+    "mwi": "85.54%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Iraq": {
+    "waste": "482 335 tons of plastic",
+    "mwi": "85.17%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Myanmar": {
+    "waste": "295 960 tons of plastic",
+    "mwi": "84.91%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Nepal": {
+    "waste": "205 092 tons of plastic",
+    "mwi": "84.71%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Haiti": {
+    "waste": "88 781 tons of plastic",
+    "mwi": "84.29%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Egypt": {
+    "waste": "1 718 737 tons of plastic",
+    "mwi": "83.87%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Suriname": {
+    "waste": "11 431 tons of plastic",
+    "mwi": "83.85%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Bangladesh": {
+    "waste": "1 211 268 tons of plastic",
+    "mwi": "83.17%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Kosovo": {
+    "waste": "31 303 tons of plastic",
+    "mwi": "83.28%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Gabon": {
+    "waste": "20 519 tons of plastic",
+    "mwi": "82.67%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Aruba": {
+    "waste": "3 100 tons of plastic",
+    "mwi": "82.28%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "United Arab Emirates": {
+    "waste": "975 453 tons of plastic",
+    "mwi": "82.28%",
+    "archetype": "The Toxic Waste Producers"
+  },
+  "Cambodia": {
+    "waste": "182 956 tons of plastic",
+    "mwi": "81.69%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Saudi Arabia": {
+    "waste": "1 145 112 tons of plastic",
+    "mwi": "52.22%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Central African Republic": {
+    "waste": "1 263 tons of plastic",
+    "mwi": "95.89%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "South Sudan": {
+    "waste": "17 760 tons of plastic",
+    "mwi": "90.24%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Micronesia": {
+    "waste": "1 200 tons of plastic",
+    "mwi": "81.31%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Palestinian Territories": {
+    "waste": "171 277 tons of plastic",
+    "mwi": "81.18%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Timor-Leste": {
+    "waste": "4 688 tons of plastic",
+    "mwi": "80.04%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Cabo Verde": {
+    "waste": "5 734 tons of plastic",
+    "mwi": "79.44%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Iran": {
+    "waste": "2 021 194 tons of plastic",
+    "mwi": "78.41%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Bhutan": {
+    "waste": "8 155 tons of plastic",
+    "mwi": "78.11%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Georgia": {
+    "waste": "70 691 tons of plastic",
+    "mwi": "78.35%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Moldova": {
+    "waste": "49 798 tons of plastic",
+    "mwi": "76.68%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Tuvalu": {
+    "waste": "194 tons of plastic",
+    "mwi": "76.36%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  
+  "Nicaragua": {
+    "waste": "119 200 tons of plastic",
+    "mwi": "73.78%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Bahrain": {
+    "waste": "102 559 tons of plastic",
+    "mwi": "73.16%",
+    "archetype": "The Toxic Waste Producers"
+  },
+  "Mongolia": {
+    "waste": "42 109 tons of plastic",
+    "mwi": "73.07%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "India": {
+    "waste": "7 430 630 tons of plastic",
+    "mwi": "68.62%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Romania": {
+    "waste": "392 687 tons of plastic",
+    "mwi": "41.36%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Serbia": {
+    "waste": "74 311 tons of plastic",
+    "mwi": "40.42%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Greece": {
+    "waste": "332 501 tons of plastic",
+    "mwi": "39.56%",
+    "archetype": "The Overloaders"
+  },
+  "Samoa": {
+    "waste": "1 000 tons of plastic",
+    "mwi": "38.40%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Brazil": {
+    "waste": "2 560 150 tons of plastic",
+    "mwi": "38.38%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Andorra": {
+    "waste": "1 754 tons of plastic",
+    "mwi": "38.06%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Argentina": {
+    "waste": "594 669 tons of plastic",
+    "mwi": "37.11%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Palau": {
+    "waste": "188 tons of plastic",
+    "mwi": "37.22%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Turkmenistan": {
+    "waste": "31 837 tons of plastic",
+    "mwi": "36.85%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Bulgaria": {
+    "waste": "118 145 tons of plastic",
+    "mwi": "35.48%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Liechtenstein": {
+    "waste": "663 tons of plastic",
+    "mwi": "35.40%",
+    "archetype": "The Self-Sustainers"
+  },
+  
+  "Costa Rica": {
+    "waste": "75 817 tons of plastic",
+    "mwi": "34.72%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Mexico": {
+    "waste": "2 142 167 tons of plastic",
+    "mwi": "34.36%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Dominica": {
+    "waste": "621 tons of plastic",
+    "mwi": "32.82%",
+    "archetype": "The Self-Sustainers"
+  },
+  
+  "Chile": {
+    "waste": "439 326 tons of plastic",
+    "mwi": "30.44%",
+    "archetype": "The Overloaders"
+  },
+  "Saint Vincent and the Grenadines": {
+    "waste": "408 tons of plastic",
+    "mwi": "30.21%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Israel": {
+    "waste": "206 148 tons of plastic",
+    "mwi": "26.97%",
+    "archetype": "The Overloaders"
+  },
+  "Malaysia": {
+    "waste": "382 605 tons of plastic",
+    "mwi": "26.35%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Seychelles": {
+    "waste": "1 211 tons of plastic",
+    "mwi": "26.13%",
+    "archetype": "The Self-Sustainers"
+  },
+  "China": {
+    "waste": "13 974 084 tons of plastic",
+    "mwi": "25.09%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Saint Lucia": {
+    "waste": "788 tons of plastic",
+    "mwi": "24.72%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Grenada": {
+    "waste": "346 tons of plastic",
+    "mwi": "24.40%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Belarus": {
+    "waste": "49 162 tons of plastic",
+    "mwi": "23.89%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Algeria": {
+    "waste": "173 207 tons of plastic",
+    "mwi": "23.25%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Latvia": {
+    "waste": "20 496 tons of plastic",
+    "mwi": "22.72%",
+    "archetype": "The Transactors"
+  },
+  "Brunei": {
+    "waste": "4 329 tons of plastic",
+    "mwi": "21.45%",
+    "archetype": "The Self-Sustainers"
+  },
+  
+  "Bahamas": {
+    "waste": "1 804 tons of plastic",
+    "mwi": "21.07%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Puerto Rico": {
+    "waste": "91 299 tons of plastic",
+    "mwi": "19.65%",
+    "archetype": "The Overloaders"
+  },
+  "Gibraltar": {
+    "waste": "402 tons of plastic",
+    "mwi": "19.33%",
+    "archetype": "The Overloaders"
+  },
+  "Italy": {
+    "waste": "606 690 tons of plastic",
+    "mwi": "18.66%",
+    "archetype": "The Overloaders"
+  },
+  "Guam": {
+    "waste": "426 tons of plastic",
+    "mwi": "17.63%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Cyprus": {
+    "waste": "8 803 tons of plastic",
+    "mwi": "15.32%",
+    "archetype": "The Transactors"
+  },
+  "Germany": {
+    "waste": "616 829 tons of plastic",
+    "mwi": "13.98%",
+    "archetype": "The Overloaders"
+  },
+  "Barbados": {
+    "waste": "1 959 tons of plastic",
+    "mwi": "12.82%",
+    "archetype": "The Overloaders"
+  },
+  "Estonia": {
+    "waste": "13 767 tons of plastic",
+    "mwi": "11.63%",
+    "archetype": "The Overloaders"
+  },
+  "Ireland": {
+    "waste": "30 522 tons of plastic",
+    "mwi": "9.99%",
+    "archetype": "The Overloaders"
+  },
+  "Monaco": {
+    "waste": "47 tons of plastic",
+    "mwi": "9.60%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Slovenia": {
+    "waste": "15 877 tons of plastic",
+    "mwi": "9.37%",
+    "archetype": "The Transactors"
+  },
+  "Portugal": {
+    "waste": "51 328 tons of plastic",
+    "mwi": "9.18%",
+    "archetype": "The Overloaders"
+  },
+  "Spain": {
+    "waste": "187 281 tons of plastic",
+    "mwi": "8.87%",
+    "archetype": "The Overloaders"
+  },
+  "Malta": {
+    "waste": "1 942 tons of plastic",
+    "mwi": "8.11%",
+    "archetype": "The Overloaders"
+  },
+  "Croatia": {
+    "waste": "14 001 tons of plastic",
+    "mwi": "7.49%",
+    "archetype": "The Overloaders"
+  },
+  "Poland": {
+    "waste": "196 327 tons of plastic",
+    "mwi": "6.92%",
+    "archetype": "The Overloaders"
+  },
+  "Hungary": {
+    "waste": "32 769 tons of plastic",
+    "mwi": "6.57%",
+    "archetype": "The Overloaders"
+  },
+  "Austria": {
+    "waste": "24 476 tons of plastic",
+    "mwi": "5.77%",
+    "archetype": "The Transactors"
+  },
+  "Belgium": {
+    "waste": "102 920 tons of plastic",
+    "mwi": "6.00%",
+    "archetype": "The Overloaders"
+  },
+  "Saint Kitts and Nevis": {
+    "waste": "58 tons of plastic",
+    "mwi": "5.85%",
+    "archetype": "The Self-Sustainers"
+  },
+  "Sweden": {
+    "waste": "36 519 tons of plastic",
+    "mwi": "5.86%",
+    "archetype": "The Overloaders"
+  },
+  
+  "France": {
+    "waste": "226 083 tons of plastic",
+    "mwi": "5.61%",
+    "archetype": "The Overloaders"
+  },
+  "Lithuania": {
+    "waste": "10 151 tons of plastic",
+    "mwi": "5.48%",
+    "archetype": "The Transactors"
+  },
+  "Canada": {
+    "waste": "162 007 tons of plastic",
+    "mwi": "5.22%",
+    "archetype": "The Overloaders"
+  },
+  "Switzerland": {
+    "waste": "24 837 tons of plastic",
+    "mwi": "5.21%",
+    "archetype": "The Overloaders"
+  },
+  "Greenland": {
+    "waste": "152 tons of plastic",
+    "mwi": "5.06%",
+    "archetype": "The Overloaders"
+  },
+  "States": {
+    "waste": "1 604 287 tons of plastic",
+    "mwi": "5.07%",
+    "archetype": "The Overloaders"
+  },
+  "Libya": {
+    "waste": "96 840 tons of plastic",
+    "mwi": "66.35%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Tunisia": {
+    "waste": "120 317 tons of plastic",
+    "mwi": "49.95%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Morocco": {
+    "waste": "461 693 tons of plastic",
+    "mwi": "61.62%%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Russia": {
+    "waste": "3 182 063 tons of plastic",
+    "mwi": "60.00%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Denmark": {
+    "waste": "20 382 tons of plastic",
+    "mwi": "4.84%",
+    "archetype": "The Overloaders"
+  },
+  "Luxembourg": {
+    "waste": "3 078 tons of plastic",
+    "mwi": "4.50%",
+    "archetype": "The Transactors"
+  },
+  "Norway": {
+    "waste": "20 006 tons of plastic",
+    "mwi": "4.60%",
+    "archetype": "The Overloaders"
+  },
+  "Taiwan": {
+    "waste": "71 378 tons of plastic",
+    "mwi": "4.49%",
+    "archetype": "The Overloaders"
+  },
+  "Isle of Man": {
+    "waste": "260 tons of plastic",
+    "mwi": "4.00%",
+    "archetype": "The Overloaders"
+  },
+  "Japan": {
+    "waste": "201 538 tons of plastic",
+    "mwi": "3.77%",
+    "archetype": "The Overloaders"
+  },
+  "New Zealand": {
+    "waste": "8 415 tons of plastic",
+    "mwi": "3.28%",
+    "archetype": "The Overloaders"
+  },
+  "Finland": {
+    "waste": "8 191 tons of plastic",
+    "mwi": "2.81%",
+    "archetype": "The Overloaders"
+  },
+  "Singapore": {
+    "waste": "14 493 tons of plastic",
+    "mwi": "2.80%",
+    "archetype": "The Overloaders"
+  },
+  "Antigua and Barbuda": {
+    "waste": "111 tons of plastic",
+    "mwi": "2.61%",
+    "archetype": "The Overloaders"
+  },
+  "Iceland": {
+    "waste": "832 tons of plastic",
+    "mwi": "2.68%",
+    "archetype": "The Overloaders"
+  },
+  "Turkey": {
+    "waste": "1 484 942 tons of plastic",
+    "mwi": "52.83%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Burkina Faso": {
+    "waste": "77 636 tons of plastic",
+    "mwi": "90.67%",
+    "archetype": "The Low-Waste-Producing Polluters"
+  },
+  "Thailand": {
+    "waste": "1 472 227 tons of plastic",
+    "mwi": "45.88%",
+    "archetype": "The Moderate Polluters"
+  },
+  "Indonesia": {
+    "waste": "1 848 033 tons of plastic",
+    "mwi": "43.78%",
+    "archetype": "The Moderate Polluters"
+  },
+  "South Korea": {
+    "waste": "68 780 tons of plastic",
+    "mwi": "2.60%",
+    "archetype": "The Overloaders"
+  },
+  "Bermuda": {
+    "waste": "37 tons of plastic",
+    "mwi": "1.32%",
+    "archetype": "The Overloaders"
+  }
 }
+

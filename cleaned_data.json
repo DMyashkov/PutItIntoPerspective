@@ -1,13 +1,223 @@
 {
     "Australia": {
         "waste": 130407,
-        "mwi": 6.27,
+        "mwi": 83.28,
         "archetype": "The Overloaders"
+    },
+    "Mauritius": {
+        "waste": 13197,
+        "mwi": 48.23,
+        "archetype": "The Moderate Polluters"
+    },
+    "Trinidad and Tobago": {
+        "waste": 45769,
+        "mwi": 77.71,
+        "archetype": "The Moderate Polluters"
+    },
+    "Vanuatu": {
+        "waste": 1391,
+        "mwi": 66.05,
+        "archetype": "The Moderate Polluters"
+    },
+    "Fiji": {
+        "waste": 19069,
+        "mwi": 49.27,
+        "archetype": "The Moderate Polluters"
+    },
+    "New Caledonia": {
+        "waste": 3566,
+        "mwi": 35.34,
+        "archetype": "The Self-Sustainers"
+    },
+    "Republic of Congo": {
+        "waste": 39600,
+        "mwi": 81.62,
+        "archetype": "The Low-Waste-Producing Polluters"
+    },
+    "Uruguay": {
+        "waste": 123268,
+        "mwi": 73.48,
+        "archetype": "The Moderate Polluters"
+    },
+    "Paraguay": {
+        "waste": 79636,
+        "mwi": 60.95,
+        "archetype": "The Moderate Polluters"
+    },
+    "Bolivia": {
+        "waste": 119475,
+        "mwi": 62.36,
+        "archetype": "The Moderate Polluters"
+    },
+    "Peru": {
+        "waste": 420279,
+        "mwi": 46.31,
+        "archetype": "The Moderate Polluters"
+    },
+    "Ecuador": {
+        "waste": 188833,
+        "mwi": 48.09,
+        "archetype": "The Moderate Polluters"
+    },
+    "Guyana": {
+        "waste": 13206,
+        "mwi": 52.46,
+        "archetype": "The Moderate Polluters"
+    },
+    "Venezuela": {
+        "waste": 657770,
+        "mwi": 52.33,
+        "archetype": "The Moderate Polluters"
+    },
+    "Dominican Republic": {
+        "waste": 320679,
+        "mwi": 84.07,
+        "archetype": "The Low-Waste-Producing Polluters"
+    },
+    "Jamaica": {
+        "waste": 57422,
+        "mwi": 68.85,
+        "archetype": "The Moderate Polluters"
+    },
+    "Cuba": {
+        "waste": 193948,
+        "mwi": 69.84,
+        "archetype": "The Moderate Polluters"
+    },
+    "Panama": {
+        "waste": 99952,
+        "mwi": 53.16,
+        "archetype": "The Moderate Polluters"
+    },
+    "El Salvador": {
+        "waste": 86945,
+        "mwi": 36.31,
+        "archetype": "The Self-Sustainers"
+    },
+    "Honduras": {
+        "waste": 112020,
+        "mwi": 62.67,
+        "archetype": "The Moderate Polluters"
+    },
+    "Belize": {
+        "waste": 10119,
+        "mwi": 57.72,
+        "archetype": "The Moderate Polluters"
+    },
+    "Guatemala": {
+        "waste": 281398,
+        "mwi": 66.94,
+        "archetype": "The Moderate Polluters"
+    },
+    "Papua New Guinea": {
+        "waste": 22461,
+        "mwi": 54.09,
+        "archetype": "The Moderate Polluters"
+    },
+    "Philippines": {
+        "waste": 842033,
+        "mwi": 55.73,
+        "archetype": "The Moderate Polluters"
+    },
+    "Vietnam": {
+        "waste": 2042259,
+        "mwi": 53.75,
+        "archetype": "The Moderate Polluters"
+    },
+    "Lao People's Democratic Republic": {
+        "waste": 64757,
+        "mwi": 75.23,
+        "archetype": "The Low-Waste-Producing Polluters"
+    },
+    "Kyrgyzstan": {
+        "waste": 98393,
+        "mwi": 79.8,
+        "archetype": "The Low-Waste-Producing Polluters"
+    },
+    "Jordan": {
+        "waste": 216209,
+        "mwi": 62.95,
+        "archetype": "The Moderate Polluters"
+    },
+    "Lebanon": {
+        "waste": 72587,
+        "mwi": 54.79,
+        "archetype": "The Moderate Polluters"
+    },
+    "Syria": {
+        "waste": 94183,
+        "mwi": 85.1,
+        "archetype": "The Low-Waste-Producing Polluters"
+    },
+    "Czechia": {
+        "waste": 53404,
+        "mwi": 7.5,
+        "archetype": "The Overloaders"
+    },
+    "Slovakia": {
+        "waste": 40684,
+        "mwi": 12.29,
+        "archetype": "The Overloaders"
+    },
+    "Ukraine": {
+        "waste": 445503,
+        "mwi": 54.27,
+        "archetype": "The Moderate Polluters"
+    },
+    "Kosovo": {
+        "waste": 31303,
+        "mwi": 83.28,
+        "archetype": "The Low-Waste-Producing Polluters"
+    },
+    "North Macedonia": {
+        "waste": 26826,
+        "mwi": 32.76,
+        "archetype": "The Self-Sustainers"
+    },
+    "Albania": {
+        "waste": 39219,
+        "mwi": 57.71,
+        "archetype": "The Moderate Polluters"
+    },
+    "Bosnia and Herzegovina": {
+        "waste": 55514,
+        "mwi": 60.15,
+        "archetype": "The Moderate Polluters"
+    },
+    "Montenegro": {
+        "waste": 32672,
+        "mwi": 81.15,
+        "archetype": "The Moderate Polluters"
+    },
+    "United Kingdom": {
+        "waste": 245140,
+        "mwi": 6.03,
+        "archetype": "The Overloaders"
+    },
+    "Democratic Republic of Congo": {
+        "waste": 133804,
+        "mwi": 93.03,
+        "archetype": "The Low-Waste-Producing Polluters"
+    },
+    "Equatorial Guinea": {
+        "waste": 18365,
+        "mwi": 61.44,
+        "archetype": "The Moderate Polluters"
+    },
+    "Sierra Leone": {
+        "waste": 33091,
+        "mwi": 94.23,
+        "archetype": "The Low-Waste-Producing Polluters"
     },
     "Ghana": {
         "waste": 374213,
         "mwi": 87.13,
         "archetype": "The Low-Waste-Producing Polluters"
+    },
+    "South Africa": {
+        "waste": 725803,
+        "mwi": 55.7,
+        "archetype": "The Moderate Polluters"
     },
     "Qatar": {
         "waste": 193999,
@@ -29,17 +239,12 @@
         "mwi": 97.34,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "Republic": {
-        "waste": 1263,
-        "mwi": 95.89,
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
     "Guinea-Bissau": {
         "waste": 11717,
         "mwi": 95.62,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "C\u00f4te": {
+    "C\u00f4te d'Ivoire": {
         "waste": 192146,
         "mwi": 95.53,
         "archetype": "The Low-Waste-Producing Polluters"
@@ -62,11 +267,6 @@
     "Mali": {
         "waste": 48617,
         "mwi": 94.32,
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Leone": {
-        "waste": 33091,
-        "mwi": 94.23,
         "archetype": "The Low-Waste-Producing Polluters"
     },
     "Madagascar": {
@@ -92,11 +292,6 @@
     "Comoros": {
         "waste": 5865,
         "mwi": 92.89,
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Rep": {
-        "waste": 133804,
-        "mwi": 93.03,
         "archetype": "The Low-Waste-Producing Polluters"
     },
     "Curacao": {
@@ -137,11 +332,6 @@
     "Yemen": {
         "waste": 320531,
         "mwi": 90.94,
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Faso": {
-        "waste": 77636,
-        "mwi": 90.67,
         "archetype": "The Low-Waste-Producing Polluters"
     },
     "Burundi": {
@@ -189,12 +379,12 @@
         "mwi": 89.21,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "Lanka": {
+    "Sri Lanka": {
         "waste": 232266,
         "mwi": 89.24,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "Islands": {
+    "Solomon Islands": {
         "waste": 5106,
         "mwi": 88.42,
         "archetype": "The Low-Waste-Producing Polluters"
@@ -289,7 +479,7 @@
         "mwi": 85.66,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "Pr\u00edncipe": {
+    "S\u00e3o Tom\u00e9 and Pr\u00edncipe": {
         "waste": 1416,
         "mwi": 85.54,
         "archetype": "The Low-Waste-Producing Polluters"
@@ -329,11 +519,6 @@
         "mwi": 83.17,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "Kosovo": {
-        "waste": 31303,
-        "mwi": 83.28,
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
     "Gabon": {
         "waste": 20519,
         "mwi": 82.67,
@@ -344,7 +529,7 @@
         "mwi": 82.28,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "Emirates": {
+    "United Arab Emirates": {
         "waste": 975453,
         "mwi": 82.28,
         "archetype": "The Toxic Waste Producers"
@@ -352,11 +537,6 @@
     "Cambodia": {
         "waste": 182956,
         "mwi": 81.69,
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "Congo": {
-        "waste": 39600,
-        "mwi": 81.62,
         "archetype": "The Low-Waste-Producing Polluters"
     },
     "Saudi Arabia": {
@@ -379,7 +559,7 @@
         "mwi": 81.31,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "Gaza": {
+    "Palestinian Territories": {
         "waste": 171277,
         "mwi": 81.18,
         "archetype": "The Low-Waste-Producing Polluters"
@@ -389,7 +569,7 @@
         "mwi": 80.04,
         "archetype": "The Low-Waste-Producing Polluters"
     },
-    "Verde": {
+    "Cabo Verde": {
         "waste": 5734,
         "mwi": 79.44,
         "archetype": "The Low-Waste-Producing Polluters"
@@ -417,11 +597,6 @@
     "Tuvalu": {
         "waste": 194,
         "mwi": 76.36,
-        "archetype": "The Low-Waste-Producing Polluters"
-    },
-    "PDR": {
-        "waste": 64757,
-        "mwi": 75.23,
         "archetype": "The Low-Waste-Producing Polluters"
     },
     "Nicaragua": {
@@ -489,11 +664,6 @@
         "mwi": 36.85,
         "archetype": "The Self-Sustainers"
     },
-    "Salvador": {
-        "waste": 86945,
-        "mwi": 36.31,
-        "archetype": "The Self-Sustainers"
-    },
     "Bulgaria": {
         "waste": 118145,
         "mwi": 35.48,
@@ -504,12 +674,7 @@
         "mwi": 35.4,
         "archetype": "The Self-Sustainers"
     },
-    "Caledonia": {
-        "waste": 3566,
-        "mwi": 35.34,
-        "archetype": "The Self-Sustainers"
-    },
-    "Rica": {
+    "Costa Rica": {
         "waste": 75817,
         "mwi": 34.72,
         "archetype": "The Self-Sustainers"
@@ -524,17 +689,12 @@
         "mwi": 32.82,
         "archetype": "The Self-Sustainers"
     },
-    "Macedonia": {
-        "waste": 26826,
-        "mwi": 32.76,
-        "archetype": "The Self-Sustainers"
-    },
     "Chile": {
         "waste": 439326,
         "mwi": 30.44,
         "archetype": "The Overloaders"
     },
-    "Grenadines": {
+    "Saint Vincent and the Grenadines": {
         "waste": 408,
         "mwi": 30.21,
         "archetype": "The Self-Sustainers"
@@ -559,7 +719,7 @@
         "mwi": 25.09,
         "archetype": "The Self-Sustainers"
     },
-    "Lucia": {
+    "Saint Lucia": {
         "waste": 788,
         "mwi": 24.72,
         "archetype": "The Self-Sustainers"
@@ -589,22 +749,12 @@
         "mwi": 21.45,
         "archetype": "The Self-Sustainers"
     },
-    "part)": {
-        "waste": 422,
-        "mwi": 21.23,
-        "archetype": "The Overloaders"
-    },
-    "(U.S.)": {
-        "waste": 4330,
-        "mwi": 21.23,
-        "archetype": "The Overloaders"
-    },
     "Bahamas": {
         "waste": 1804,
         "mwi": 21.07,
         "archetype": "The Self-Sustainers"
     },
-    "Rico": {
+    "Puerto Rico": {
         "waste": 91299,
         "mwi": 19.65,
         "archetype": "The Overloaders"
@@ -699,7 +849,7 @@
         "mwi": 6.0,
         "archetype": "The Overloaders"
     },
-    "Nevis": {
+    "Saint Kitts and Nevis": {
         "waste": 58,
         "mwi": 5.85,
         "archetype": "The Self-Sustainers"
@@ -707,11 +857,6 @@
     "Sweden": {
         "waste": 36519,
         "mwi": 5.86,
-        "archetype": "The Overloaders"
-    },
-    "Kingdom": {
-        "waste": 245140,
-        "mwi": 6.03,
         "archetype": "The Overloaders"
     },
     "France": {
@@ -784,7 +929,7 @@
         "mwi": 4.49,
         "archetype": "The Overloaders"
     },
-    "Man": {
+    "Isle of Man": {
         "waste": 260,
         "mwi": 4.0,
         "archetype": "The Overloaders"
@@ -794,7 +939,7 @@
         "mwi": 3.77,
         "archetype": "The Overloaders"
     },
-    "Zealand": {
+    "New Zealand": {
         "waste": 8415,
         "mwi": 3.28,
         "archetype": "The Overloaders"
@@ -809,7 +954,7 @@
         "mwi": 2.8,
         "archetype": "The Overloaders"
     },
-    "Barbuda": {
+    "Antigua and Barbuda": {
         "waste": 111,
         "mwi": 2.61,
         "archetype": "The Overloaders"
@@ -839,7 +984,7 @@
         "mwi": 43.78,
         "archetype": "The Moderate Polluters"
     },
-    "Korea": {
+    "South Korea": {
         "waste": 68780,
         "mwi": 2.6,
         "archetype": "The Overloaders"
